@@ -18,29 +18,26 @@ It provides a scalable backend API for managing employees, departments, and HR o
 
 ---
 
-### Clone the repository
-bash
+Setup and Run the App
+1. Clone the repository
 git clone https://github.com/<your-username>/hr-app.git
 cd hr-app
+
 2. Create a Python virtual environment
 python -m venv venv
-source venv/Scripts/activate    # on Git Bash or WSL (Windows)
+source venv/Scripts/activate    # for Git Bash or WSL on Windows
+
 3. Install dependencies
 pip install -r requirements.txt
+
 4. Run the app
 uvicorn app.main:app --reload
 
-Visit the API docs:
-Swagger UI → http://127.0.0.1:8000/docs
-ReDoc UI → http://127.0.0.1:8000/redoc
+Visit the API Docs
 
-☁️ Deploying with Terraform
-1. Initialize Terraform
-cd terraform
-terraform init
-2. Plan and apply
-terraform plan -var="allowed_ip=$ALLOWED_IP" -var="public_key=$(cat ~/.ssh/id_rsa.pub)"
-terraform apply -var="allowed_ip=$ALLOWED_IP" -var="public_key=$(cat ~/.ssh/id_rsa.pub)"
+Swagger UI: http://127.0.0.1:8000/docs
+
+ReDoc UI: http://127.0.0.1:8000/redoc
 3.Destroy infrastructure
 terraform destroy -var="allowed_ip=$ALLOWED_IP" -var="public_key=$(cat ~/.ssh/id_rsa.pub)"
 
