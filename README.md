@@ -45,6 +45,8 @@ ReDoc UI: http://127.0.0.1:8000/redoc
 ![Terraform infrastructure created](app/images/hr-app-1.jpg)
 
 ###Login to bastion host:
+
+
 ![#Login to bastion host](app/images/hr-app-2.jpg)
 
 ###The running app:
