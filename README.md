@@ -42,9 +42,9 @@ ReDoc UI: http://127.0.0.1:8000/redoc
 
 ## Screenshots
 
-![Login Page](app/images/hr-app-1.jpg)
-![Dashboard](app/images/hr-app-2.jpg)
-![Settings Page](app/images/hr-app-2.jpg)
+![Terraform infrastructure created](app/images/hr-app-1.jpg)
+![Login to bastion host](app/images/hr-app-2.jpg)
+![The running app](app/images/hr-app-3.jpg)
 3.Destroy infrastructure
 terraform destroy -var="allowed_ip=$ALLOWED_IP" -var="public_key=$(cat ~/.ssh/id_rsa.pub)"
 
