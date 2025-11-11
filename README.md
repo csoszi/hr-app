@@ -38,6 +38,13 @@ Visit the API Docs
 Swagger UI: http://127.0.0.1:8000/docs
 
 ReDoc UI: http://127.0.0.1:8000/redoc
+
+
+## Screenshots
+
+![Login Page](images/hr-app-1.jpg)
+![Dashboard](images/hr-app-2.jpg)
+![Settings Page](images/hr-app-2.jpg)
 3.Destroy infrastructure
 terraform destroy -var="allowed_ip=$ALLOWED_IP" -var="public_key=$(cat ~/.ssh/id_rsa.pub)"
 
