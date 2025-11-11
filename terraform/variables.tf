@@ -23,7 +23,7 @@ variable "aws_region" {
 variable "s3_bucket_name" {
   description = "S3 bucket name"
   type        = string
-  default     = "hr-app-data"
+  default     = "hr-app-data-kd" 
 }
 
 variable "aws_profile" {
