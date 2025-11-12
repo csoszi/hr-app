@@ -20,7 +20,7 @@ It provides a scalable backend API for managing employees, departments, and HR o
 
 Setup and Run the App
 1. Clone the repository
-git clone https://github.com/<your-username>/hr-app.git
+git clone https://github.com/csoszi/hr-app.git
 cd hr-app
 
 2. Create a Python virtual environment
