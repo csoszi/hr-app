@@ -32,3 +32,13 @@ variable "aws_profile" {
   default     = "default"
 }
 
+variable "dockerhub_user" {
+  description = "Your Docker Hub username"
+  type        = string
+}
+
+variable "docker_image_name" {
+  description = "Docker image name (e.g. hr-app:latest)"
+  type        = string
+}
+

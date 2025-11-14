@@ -1,0 +1,13 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - docker.io
+
+runcmd:
+  - sudo systemctl enable docker
+  - sudo systemctl start docker
+  - sleep 10
+  - sudo docker pull ${dockerhub_user}/${docker_image_name}
+  - sudo docker run -d -p 80:8000 --restart always --name hr-app ${dockerhub_user}/${docker_image_name}
+  - echo "Docker container started from ${dockerhub_user}/${docker_image_name}" > /home/ubuntu/docker_status.txt
